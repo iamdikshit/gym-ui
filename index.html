@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="overflow-x-hidden">
+<html class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,33 +39,33 @@
       </div>
       <nav
         id="nav"
-        class="w-full h-screen top-0 left-0 absolute bg-black bg-opacity-90 flex items-center justify-center translate-x-full transition-all duration-500 opacity-0 pointer-events-none lg:opacity-100 lg:translate-x-0 lg:bg-transparent lg:w-max lg:h-max lg:static lg:justify-end"
+        class="w-full h-screen top-0 left-0 absolute bg-black bg-opacity-90 flex items-center justify-center translate-x-full transition-all duration-500 opacity-0 pointer-events-none lg:pointer-events-auto lg:opacity-100 lg:translate-x-0 lg:bg-transparent lg:w-max lg:h-max lg:static lg:justify-end"
       >
         <ul class="text-white flex flex-col lg:flex-row items-center gap-8">
           <li
             class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
           >
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li
             class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
           >
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li
             class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
           >
-            <a href="#">Trainers</a>
+            <a href="#trainers">Trainers</a>
           </li>
           <li
             class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
           >
-            <a href="#">Diet</a>
+            <a href="#gallery">Gallery</a>
           </li>
           <li
             class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
           >
-            <a href="#">Contact</a>
+            <a href="#price">Price</a>
           </li>
           <li
             class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
@@ -117,7 +117,10 @@
     </section>
     <!-- hero section end -->
 
-    <section class="about-section px-8 md:px-16 bg-black pt-32 pb-16">
+    <section
+      id="about"
+      class="about-section px-8 md:px-16 bg-black pt-32 pb-16"
+    >
       <div
         class="container mx-auto text-white grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center"
       >
@@ -247,7 +250,7 @@
 
     <!-- Trainer section -->
 
-    <section class="trainer-section px-8 md:px-16 bg-black py-16">
+    <section id="trainers" class="trainer-section px-8 md:px-16 bg-black py-16">
       <div
         class="head mx-auto flex flex-col gap-8 items-center justify-center md:flex-row md:justify-between"
       >
@@ -416,7 +419,7 @@
     <!-- end trainers -->
     <!-- gallery start -->
 
-    <section class="trainer-section px-8 md:px-16 bg-black py-16">
+    <section id="gallery" class="gallery-section px-8 md:px-16 bg-black py-16">
       <div
         class="head mx-auto flex flex-col gap-8 items-center justify-center md:flex-row md:justify-between"
       >
@@ -510,7 +513,10 @@
     <!-- gallery end -->
 
     <!-- pricing -->
-    <section class="text-primary-red bg-black body-font overflow-hidden">
+    <section
+      id="price"
+      class="text-primary-red bg-black body-font overflow-hidden"
+    >
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1

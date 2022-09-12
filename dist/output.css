@@ -872,6 +872,10 @@ video {
   overflow-x: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1399,6 +1403,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:pointer-events-auto {
+    pointer-events: auto;
+  }
+
   .lg\:static {
     position: static;
   }
